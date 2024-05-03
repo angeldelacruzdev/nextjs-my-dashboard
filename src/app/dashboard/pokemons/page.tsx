@@ -1,6 +1,11 @@
 import { PokemonsResponse, SimplePokemon } from "@/app/interfaces";
 import { PokemonGrid } from "@/pokemons";
-import Image from "next/image";
+
+export const metadata = {
+  title: "Págiina de pokemones",
+  description:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, magni",
+};
 
 const getPokemons = async (
   limit = 100,

@@ -1,9 +1,4 @@
 import { CartCounter } from "@/shopping-cart/components";
-<<<<<<< HEAD
-
- 
-=======
->>>>>>> 8b2b7e7495f3ff05ddc360e7204a197290af383b
 
 export const metadata = {
   title: "Shopping Cart",
