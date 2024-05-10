@@ -2,8 +2,8 @@
 
 import { IoCartOutline } from 'react-icons/io5'
 import { SimpleWidget } from './SimpleWidget'
-import { useAppSelector } from '@/store'
-
+import { useAppSelector } from '@/store/hooks'
+ 
 export const WidgetsGrid = () => {
 
     const inCart = useAppSelector(state => state.counter.count)

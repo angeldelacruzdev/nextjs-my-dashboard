@@ -1,8 +1,8 @@
 import { PokemonsResponse, SimplePokemon } from "@/app/interfaces";
-import { PokemonGrid } from "@/pokemons";
+import { PokemonGrid } from "@/components/pokemons";
 
 export const metadata = {
-  title: "Págiina de pokemones",
+  title: "Página de pokemones",
   description:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, magni",
 };

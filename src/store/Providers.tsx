@@ -1,13 +1,24 @@
 'use client'
 import { Provider } from "react-redux";
-import { store } from "./";
+import { AppStore, store } from "./";
+import { useRef } from "react";
+import { setFavoritePokemons } from "./pokemons/pokemonSlice";
 
 interface Props {
   children: React.ReactNode;
 }
 
 const Providers = ({ children }: Props) => {
-  return <Provider store={store}>{children}</Provider>;
+
+  const storeRef = useRef<AppStore>()
+
+ 
+  if (!storeRef.current) {
+    storeRef.current = store()
+    const favorites = JSON.parse(localStorage.getItem('favorite-pokemons') ?? '{}')
+    storeRef.current.dispatch(setFavoritePokemons(favorites))
+  }
+  return <Provider store={storeRef.current}>{children}</Provider>
 };
 
 export default Providers;

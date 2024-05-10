@@ -1,6 +1,7 @@
 "use client";
-import { useAppDispatch, useAppSelector } from "@/store";
+
 import { addOne, initCounterState, substractOne } from "@/store/counter/CounterSlice";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { useEffect } from 'react';
 
 interface Props {
