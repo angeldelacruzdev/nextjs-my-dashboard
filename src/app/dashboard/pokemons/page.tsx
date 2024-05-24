@@ -1,8 +1,8 @@
 import { PokemonsResponse, SimplePokemon } from "@/app/interfaces";
-import { PokemonGrid } from "@/pokemons";
+import { PokemonGrid } from "@/components/pokemons";
 
 export const metadata = {
-  title: "Págiina de pokemones",
+  title: "Página de pokemones",
   description:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, magni",
 };
@@ -30,7 +30,7 @@ export default async function PokemonsPage() {
       <h1>Hello Pokemons Page</h1>
 
       <div className="flex flex-col">
-        <span className="text-5xl my-2">Listado de Pokémons</span>
+        <span className="text-4xl my-2">Listado De Pokémons <small className="text-blue-500">Estático</small></span>
         <PokemonGrid pokemons={pokemons} />
       </div>
     </div>

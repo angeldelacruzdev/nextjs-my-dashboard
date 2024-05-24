@@ -1,6 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { IoBrowsersOutline, IoCarOutline, IoCart, IoLogoReact, IoPaperPlaneOutline } from "react-icons/io5";
+import {
+  IoBrowsersOutline,
+  IoCarOutline,
+  IoCart,
+  IoHeartOutline,
+  IoLogoReact,
+  IoPaperPlaneOutline,
+} from "react-icons/io5";
 import { SideBarMenuItem, SideBarMenuItemProps } from "./SideBarMenuItem";
 
 const menuItems: SideBarMenuItemProps[] = [
@@ -21,6 +28,12 @@ const menuItems: SideBarMenuItemProps[] = [
     icon: <IoPaperPlaneOutline size={40} />,
     title: "Pokemons",
     sibTitle: "Generación estática ",
+  },
+  {
+    path: "/dashboard/favorites",
+    icon: <IoHeartOutline size={40} />,
+    title: "Favoritos",
+    sibTitle: "Global state",
   },
 ];
 
